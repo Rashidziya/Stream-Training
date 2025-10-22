@@ -1,0 +1,8 @@
+@import '5variable';
+
+header{
+    background-color: lighten($color: $primary-color, $amount: 20);
+    padding: 20px;
+    text-align: center;
+
+}

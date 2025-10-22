@@ -1,0 +1,210 @@
+Angular
+-------------
+
+1. It is an open source typescript based
+frontend framework which is used to create SPA ( Single Page Application ).
+
+2. Angular extends html and makes the Application dynamic.
+
+3. Angular is the product of Google. 
+
+4. Typescript is more related to ES6 verison of Javascript and Typescript is partially object oriented.
+
+----------------------------------
+
+Difference between Traditional Application and Single Page Application (SPA) ?
+
+Traditional Application:-
+-------------------------
+
+1. client server architecture  or 
+request response model
+
+Client --------http--------->Server
+Server--------http---------->Client
+
+
+eg- clicking button or submitting form 
+
+2. when the request go to the server then in response the server will generate a new html page for every request, then processing time of the application will be increased and the performance of the application get reduced automatically.
+
+3. That's why SPA comes in picture 
+
+Single Page Application (SPA):-
+--------------------------------
+
+eg - Home About Products Contact
+
+-> Pages are called as Components in Angular
+
+-> Component is building block of Application.
+
+-> Here if we hit on button the page 
+doesn't refresh just the content gets changed.
+
+-> It loads the single html page initially and dynamically it updates the content as per the user interact with the Application.
+
+-> It will not reload the entire page for every request, then the processing time of the Application will be reduced and the performance of the application will get increased automatically.
+
+----------------------------------------
+
+Difference between Angular JS and Angular :-
+
+
+Angular version 1.x is called as Angular JS 
+
+-> it is based on MVC ( model view controller) we can define model, view, controller to create the structure of the Application.
+
+-> Angular JS is written in Javascript 
+
+-> Angular JS supports two way databinding, directives,components, pipes.
+
+-> Angular JS doesn't support mobile development
+
+-> Angular JS doesn't have cli.
+
+
+Angular 2 and later versions are called as Angular 
+
+-> Angular is completely rewritten of Angular JS. 
+
+-> Angular is written in TypeScript 
+
+-> Angular supports mobile development.
+
+-> Angular follows component based approach.
+
+-> Angular supports two way databinding, directives, components, pipes, APi, Services, dependency injection, Form Validation, Routing
+
+Commands :-
+-------------------
+
+
+To install angular in our system use 
+npm i @angular/cli@16.2.16 --g
+
+To check Angular version : ng version
+
+To create Angular Project : ng new projectname
+
+To start Angular Application : ng server --o
+
+Note:-
+-------
+
+1. In Angular project structure in src>app>app.component.html is the hmtl page which renders when application is started.
+
+2. remove everything except router-outlet tag and type your own html code
+
+---------------------------
+
+
+HTML consists of 6 headings 
+
+<h1>---<h6>
+
+<h1> - most bold 
+<h6> - least bold 
+
+Hyperlink :-
+-------------
+
+1. It is used to connect one webpage with another webpage and anchor tag is used to connect the pages with each other.
+
+eg: click me --> redirect to google 
+
+marque--
+------------
+
+-> To move text from right to left we use marque tag.
+
+eg:
+ <marquee direction="right" behavior="alternate" scrollamount="14" onmouseover="stop()" onmouseout="start()">
+
+
+
+CSS  
+-------------------
+
+CSS - Cascading Style sheet
+
+-> It is a stylesheet language, it is used to add look and feel to the html elements. 
+
+-> There are 4 types of selectors in CSS
+
+1. Element as a Selector 
+2. Id as a Selector 
+3. Class as a Selector 
+4. Universal as a Selector 
+
+-------------------------------------
+
+Custom component -
+------------------------
+
+-> User defined components are called as custom component
+
+syntax: ng g c componentName
+
+-> it will create 4 files.
+    1. html page
+    2. Typescript file 
+    3. Typescript test file 
+    
+-> To use component use <app-componentName></app-componentName>
+
+Data Binding:-
+--------------------
+
+There are 3 ways to get the data from the controller-
+
+1. interpolation
+2. Array 
+3. json 
+
+Interpolation
+----------------
+
+Add the variable in component.ts file 
+
+export class AboutComponent {
+  technology='Angular';
+}
+
+Use the variable in html page like this 
+
+<h1>
+    My Favorite Techonology is {{technology}}
+</h1>
+
+Array
+-----------
+
+-> create array in export in component.ts file 
+
+export class HomeComponent {
+    courses=["Angular","React JS","Node JS","Vue JS","MongoDB"];
+}
+
+-> To use array in Html page use 
+
+json 
+---------
+
+
+
+Directives - 3 types
+----------------------
+
+1. structure directives
+
+there are 3 types of structure directives 
+
+i)*ngFor 
+ii)*ngIf
+iii)*ngswitch
+
+2. attribute directive 
+
+
+3. Custom Directives 

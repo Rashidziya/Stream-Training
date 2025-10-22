@@ -1,0 +1,19 @@
+@import '5header','5footer';
+// @import '5variable'     we can import this as well. but there is no need of it 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: greenyellow;
+}
+
+
+
+
+// This is kind of main file of scss which will going to be 
+// transpiled into css. Here only u will import all the 
+// scss files which is used in your porject .
+// my opinion . the main file of scss structure is like this
+// where you will just import all the scss files and 
+// you gonna link this main scss file in the html
+// whihc under the hood transpile the all scss file and use in the html 
+// you will link this scss main file in your html root file..

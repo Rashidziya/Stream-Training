@@ -1,0 +1,21 @@
+$primary-color: #3498db;
+$font-stack: Helvetica, sans-serif;
+$padding-size : 20px;
+$secondary-color : #75750b;
+
+body{
+    background-color: $primary-color;
+    font-size: $font-stack;
+    padding: $padding-size;
+}
+
+
+button{
+    border: none;
+    border-radius: 2px;
+    background-color: green;
+    padding: $padding-size/3;
+}
+button:hover{
+    background-color: $secondary-color;
+}

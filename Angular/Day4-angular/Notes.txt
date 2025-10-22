@@ -1,0 +1,36 @@
+Routing -
+
+-> it is used to create SPA(single page Application)
+-> used to navigate between one page into another within the single page.
+
+------------------------------
+Parameter in Routing
+
+
+
+---------------------
+Nested Routing -
+The component inside component is called
+nested component and the mechanism is clled as nested routing..
+
+
+<router-outlet></router-outlet>
+it is used to specify the space where the routed component should render
+
+
+Task-
+create two nested component inside the product component
+1. category
+2. sub-category
+
+
+Bootstrap-
+
+It is a frontend framework 
+-> used to make responsive Application & 
+
+
+tomorrow agenda
+
+template driven forms
+model driven forms

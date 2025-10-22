@@ -1,0 +1,52 @@
+Custom directives -
+command -> ng g d directiveName
+
+-> user defined directives are called Custom directives.
+-> it is reusable . we can reuse as per the requirement of the project.
+
+
+Srvices -
+command - ng g s service_name
+it creates two file -> .ts and .spec.ts
+it is injectable
+we can use service as dependency injection
+it is reusable
+
+
+Api -
+we need establish the communication b/w client and serve
+
+HTTPCLIENT Module -
+
+live API -> from newsapi- 
+https://newsapi.org/v2/everything?q=tesla&from=2025-09-13&sortBy=publishedAt&apiKey=dbd77ba984014592a54823905985bee8
+
+life cycle method of angular
+
+ngOnInit()-
+it is used to initialize the data
+its property is that it used only once 
+
+
+Task - 
+create component -> products
+create a servie -> fakestore
+fetch Api  ->  https://fakestoreapi.com
+[
+  {
+    "id": 0,
+    "title": "string",
+    "price": 0.1,
+    "description": "string",
+    "category": "string",
+    "image": "http://example.com"
+  }
+]
+ 
+fetch all the above data from the Api ?
+
+
+Task -
+Create MVVM architecture on contact component
+
+it is just the other name of two way data binding.... Nothing more

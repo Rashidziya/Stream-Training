@@ -1,0 +1,48 @@
+Taks -
+create 4 components 
+1. Home
+2. About 
+3. Contact
+4. Products
+
+and integrate routing
+
+
+------------------------------
+Forms-
+Two types of Forms in angular
+
+1. Template driven Forms -
+
+-> It has form specific Directives to implement form functionality
+-> It is best Suited for simple Forms 
+-> It is not much scalable as compare to Reactive-Forms(Model Driven Forms).
+
+
+2. model driven forms (reactive - forms)
+
+create reactive component
+
+-------------------------------------------
+
+in About component -
+via attribute Directives
+ngClass - >  try to apply dynamic classes on div
+change the dimension of the div box..
+
+
+--------------------------------
+IN Products component
+
+create two nested component
+1. ProductsDetail
+2. ProductsCategory
+
+& integrate these component in routing..
+
+------------------------------------------
+
+Cards -
+
+
+-----------------------------

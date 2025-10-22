@@ -1,0 +1,25 @@
+@mixin button-style($bg-color,$text-color){
+    border: 2px;
+    border-color: black;
+    border-radius: 5px;
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.btn-primary{
+    @include button-style(blue, white)
+    // font-weight : bold;    in mixin we cannot add extra feature unlike @extend
+}
+
+.btn-secondary{
+    @include button-style(lightcoral, black)
+}
+
+.btn-default{
+    @include button-style(lightgreen, darkblue)
+}

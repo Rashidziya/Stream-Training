@@ -1,0 +1,42 @@
+$base-color : #00008B;
+$primary-width : 400px;
+$primary-height : 300px;
+
+
+
+.box-light{
+    background-color: lighten($color: $base-color, $amount: 20);
+}
+
+.box-dark{
+    background-color: darken($color: $base-color, $amount: 10);
+}
+
+.box-saturated{
+    background-color: saturate($color: $base-color, $amount: 30%);
+}
+.box-complement{
+    background-color: complement($color: $base-color);
+}
+.box-desaturate{
+    background-color: desaturate($color: $base-color, $amount: 50%);
+}
+
+.box-fadein{
+    background-color: fade-in($color: $base-color, $amount: 0.2);
+}
+
+
+.box-fadeout{
+    background-color: fade-out($color: $base-color, $amount: 0.2);
+}  
+ 
+div{
+    width: $primary-width;
+    height: $primary-height;
+    font-size: medium;
+    font-weight: 100;
+    text-align: center;
+    color: white; 
+    
+}

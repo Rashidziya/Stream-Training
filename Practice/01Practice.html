@@ -1,0 +1,129 @@
+<!-- PRACTICE - Activity
+ 
+Objective: Create a food ordering UI for a restaurant website.
+✅ Concepts Used:
+Typography: Menu heading, styled food categories, list of popular dishes
+Grid: Layout for menu items (e.g., 3-column food grid)
+Form: Order form (Name, Table No, Select Dish, Quantity)
+Table: Table showing "Current Orders" with item, quantity, and table number -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>MY RESTAURANT</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <h1 class="text-center">My Restaurant</h1>
+        <h3 class="mt-4">Popular Dishes</h3>
+        <p class="text-muted">Choose from our best-selling dishes below:</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <img src="./assets/pizza.jpg" width="300" height="200" class="card-img-top" alt="Pizza" />
+            <div class="card-body">
+              <h3 class="card-title">Cheese Pizza</h5>
+              <p class="card-text">₹199</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./assets/veg burger.jpg " width="300" height="200" class="card-img-top" alt="Burger" />
+            <div class="card-body">
+              <h3 class="card-title">Veg Burger</h5>
+              <p class="card-text">₹149</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./assets/pasta.jpg" width="300" height="200" class="card-img-top" alt="Pasta" />
+            <div class="card-body">
+              <h3 class="card-title">Pasta</h5>
+              <p class="card-text">₹179</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <p class="h2"> Place you Order</p>
+      <form class="mt-4">
+        <div class="form-group">
+          <label>Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Table No:</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Enter table number"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Select Dish:</label>
+          <select class="form-control">
+            <option>Cheese Pizza</option>
+            <option>Veg Burger</option>
+            <option>Pasta</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Quantity:</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Enter quantity"
+          />
+        </div>
+
+        <button class="btn btn-success mt-2">Place Order</button>
+      </form>
+
+      <h3 class="mt-5">Current Orders</h3>
+      <table class="table table-bordered table-stripped table-hover ">
+        <thead>
+          <tr>
+            <th>Dish</th>
+            <th>Quantity</th>
+            <th>Table No</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="success">
+            <td>Cheese Pizza</td>
+            <td>2</td>
+            <td>5</td>
+          </tr>
+          <tr class="success">
+            <td >Veg Burger</td>
+            <td>1</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+@function double-size($size){
+    @return $size * 2;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    // align-items: center; 
+}
+
+.box{
+    width: double-size(50px);
+    height: double-size(40px);
+    background-color: lightblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,6 @@
+-----------------------TypeScript-----------------------------
+
+
+Transpiler(TSC) - converts one high level language into another high level language
+                - Typescript -> javascript
+

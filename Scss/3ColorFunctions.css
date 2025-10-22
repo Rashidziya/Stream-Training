@@ -1,0 +1,36 @@
+.box-light {
+  background-color: #0000f1;
+}
+
+.box-dark {
+  background-color: #000058;
+}
+
+.box-saturated {
+  background-color: darkblue;
+}
+
+.box-complement {
+  background-color: #8b8b00;
+}
+
+.box-desaturate {
+  background-color: rgb(34.75, 34.75, 104.25);
+}
+
+.box-fadein {
+  background-color: darkblue;
+}
+
+.box-fadeout {
+  background-color: rgba(0, 0, 139, 0.8);
+}
+
+div {
+  width: 400px;
+  height: 300px;
+  font-size: medium;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=3ColorFunctions.css.map */

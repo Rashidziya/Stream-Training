@@ -1,0 +1,22 @@
+$primary-color : #2F4F4F;
+$text-color : #d34808;
+
+
+nav{
+    padding: 5px;
+    background-color: $primary-color;
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        li{margin: 10px;
+            
+            a{
+                color: $text-color;
+                &:hover{
+                    color: lighten($color: $text-color, $amount: 20);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+                                        BOOTSTRAP  #3                         Date : 03/10/2025
+Current version #5
+
+Bootstrap -> FrontEnd framework for creating responsive Designs(diff Screen Size)
+             predefined CSS Classes and Js components
+            developed by Twitter Engineers
+            Supports - Grid System
+            it is open Source
+Two ways of installing Bootstrap
+    1. npm install bootstrap (for developement)
+    2. use CDN and the link in html
+
+GRID System
+
+>> Divides the window in 12 Equal columns
+>> it Follows Flex Box Layout
+
+class prefix     screen size 
+
+.col-sm             >=576 px 
+
+.col-md             >=768px 
+
+.col-lg             >=992px 
+
+.col-xl             >=1200px 
+
+.col-xxl            >=1400px
+ 
+
+
+ ----------------------------------------------------------------
+
+ CONTAINER
+
+Base Layout wrapper in Bootstrap
+
+class = 'container'
+        fixed size width
+        there is some margin from all side (By default)
+
+class = 'container-fluid'
+        whole window width
+        it takes whole width based on screen size of the device
+
+
+HEADING
+h1,h2........h6 (html)
+
+<p class='h1'></P> this is the way to define any text as heading in bootstrap
+
+---------------------------------------------------------------------------------
+
+Transformation
+
+text-uppercase
+text-lowercase
+text-cpaitalize
+
+-----------------------------
+
+List
+
+unstyle-list -> style-unstyle
+inline-list -> list-inline     item1, item2, item2....
+
+item1
+item2
+item3
+
+------------------------------
+COLORS
+text-primary, text-danger, text-success
+
+-------------------------------------
+TABLE
+pre-styled tables
+
+.table (class)
+.table-hover
+.table-borderd
+.table-stripped (Zebra Cross pattern)
+
+bootstrap 5 -> table-dark
+
+--------------------------------------
+FORMS
+
+VERTICAL FORMS        by default forms are vertical
+HORIZONTAL FORMS
+INLINE
+
+form-group 
+form-control
+
+
+
+
+
+
+
+
+
+
+
+PRACTICE - Activity
+ 
+Objective: Create a food ordering UI for a restaurant website.
+✅ Concepts Used:
+Typography: Menu heading, styled food categories, list of popular dishes
+Grid: Layout for menu items (e.g., 3-column food grid)
+Form: Order form (Name, Table No, Select Dish, Quantity)
+Table: Table showing "Current Orders" with item, quantity, and table number
+ 
+ 

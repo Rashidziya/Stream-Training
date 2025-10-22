@@ -1,0 +1,35 @@
+.btn-primary {
+  border: 2px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  border: 2px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: lightcoral;
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-default {
+  border: 2px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: lightgreen;
+  color: darkblue;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}/*# sourceMappingURL=7mixin.css.map */

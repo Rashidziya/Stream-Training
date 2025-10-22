@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 100px;
+  height: 80px;
+  background-color: lightblue;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=8functions.css.map */

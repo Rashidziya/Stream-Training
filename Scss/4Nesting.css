@@ -1,0 +1,18 @@
+nav {
+  padding: 5px;
+  background-color: #2F4F4F;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+nav ul li {
+  margin: 10px;
+}
+nav ul li a {
+  color: #d34808;
+}
+nav ul li a:hover {
+  color: rgb(248.095890411, 128.1369863014, 72.904109589);
+}/*# sourceMappingURL=4Nesting.css.map */

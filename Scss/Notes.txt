@@ -1,0 +1,139 @@
+-------------------------------- SaaS Notes ---------------------------------------------------
+SASS
+ 
+-> SYNTACTICALLY AWESOME STYLE SHEETS 
+-> programming features 
+-> cleaner , faster , more organized and reusable styles 
+-> CSS preprocessor adds special features 
+		- Variables 
+		- Nesting 
+		- Partials & Imports 
+		- Mixins 
+		- Inheritance 
+		- Operators (Functions)
+-> extension -> .sass 
+-> SCSS >> Sassy CSS , .scss 
+
+ 
+url ===> request ==> server side 
+	response (HTML/CSS/JS)
+ 
+-> npm install sass
+-> Extension >> vs code 
+scss>> css
+ 
+-> SCSS >>
+ 
+Transpilation
+ 
+SASS >> CSS
+ 
+..........................................................................................
+ 
+Create scss >> watch sass (click) >> automatically >> css.map , css
+Use css file in HTML 
+<link rel="stylesheet" href="name.css">
+ 
+............................................
+ 
+Variables IN SCSS
+ 
+-> store reusable values such as colors , fonts , sizes / css property values 
+-> consistent , easier to manage , faster updates
+ 
+syntax 
+$variable-name : value ;
+ 
+........................................
+ 
+Nesting IN SCSS
+ 
+-> allows us to write clean , structured & reusable CSS by following the hierarchy of our HTML
+ 
+nav >> ul >> li
+ 
+nav {
+ 
+}
+ 
+ 
+nav ul {
+ 
+}
+nav ul li {
+ 
+}
+ 
+..........................
+ 
+with scss
+ 
+nav{
+	// styles to implement inside the nav bar element
+	ul{
+		// styles to be implemented insdie the ul
+		li{
+			// styles to be implemented inside the li
+ 
+		}
+	}
+}
+ 
+.....................................
+ 
+IMPORT IN SCSS
+ 
+@import directive is used to include one SCSS file into another 
+- reusable
+ 
+@import 'filename' , 'file2' , 'file3'
+ 
+file.scss >> css (don't want to transpile)
+_file.scss
+ 
+................................
+ 
+EXTEND
+ 
+inherit the properties of one selector / styles into another
+ 
+.selector1{
+	some styles
+}
+ 
+.selector2{
+	@extend .selector1
+	//additional styles 
+}
+ 
+.................................................
+ 
+MIXIN
+ 
+-> block of reusable scss code that you can include anywhere
+-> unlike extend we cannot add any extra feature where we are including the mixin
+@mixin mixin_name{
+	reusable
+}
+ 
+.selector{
+	@include mixin_name
+}
+ 
+ 
+................................................
+ 
+Functions
+ 
+-> returns a single value (color , number , string...)
+-> take parameters
+ 
+@function func_name(parameters){
+	@return value;
+}
+ 
+.selector{
+	property : func_name(arguments)
+}
+ 
+........................................................
