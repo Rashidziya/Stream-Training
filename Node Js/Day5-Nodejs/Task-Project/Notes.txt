@@ -1,0 +1,14 @@
+create 4 responsive components ? and integrate in routing ... 
+Home About Gallery Contact 
+
+in about create 2 nested components 
+category , sub-category
+
+----------------------------
+
+create a backend folder
+
+NOde + express server that returns hello user ! How are you at "/api"
+
+use angular httpclient to fetch the message from node and dsiplay it over the dom
+in Home component.

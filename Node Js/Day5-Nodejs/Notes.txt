@@ -1,0 +1,48 @@
+Promises -
+
+Task -
+what is Promise and explain four states of Promises ? implement promise with suitable example
+
+A Promise in JavaScript is an object that represents the eventual completion
+ or failure of an asynchronous operation.
+
+four states -
+
+ --> pending - Initial state – operation is still in progress.
+
+--> fulfilled - Operation completed successfully and returns a value. 
+
+--> rejected - Operation failed and returns an error/reason.
+
+--> settled - Final state – either fulfilled or rejected (not pending anymore).
+
+
+implement promise with suitable example -
+    Go to -> promiseEmp.js
+
+
+
+
+
+
+---------------------------------------------
+Blue Bird library - 
+
+-> It is used to promisifying the modules that means the process of converting the functions
+    that uses callbacks into the functions that returns promise.
+
+-> It provides us method promise.promisify() to promisify the callback based functions.
+
+-> if we want to promisify the complete module then we can use promise.promisifyAll()
+
+-> It is convenient way to work with Promises.
+
+
+------------------------------------------------
+create 4 responsive components ? and integrate in routing ... 
+Home About Gallery Contact 
+
+in about create 2 nested components 
+category , sub-category
+
+folder Name - Task-Project
