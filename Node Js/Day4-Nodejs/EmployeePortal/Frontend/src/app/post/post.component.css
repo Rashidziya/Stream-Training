@@ -1,0 +1,10 @@
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(13, 110, 253, 0.3); /* blue glow */
+  background-color: lightgrey; /* light blue tint */
+
+}
+
+/* .card{
+    background-color: lightgrey;
+} */

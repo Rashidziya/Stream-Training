@@ -1,0 +1,89 @@
+<div class="bg-primary p-3 mb-5">
+  <a routerLink="/post" class="text-white">Post</a>
+</div>
+<div class="container-fluid d-flex justify-content-center w-50 h-auto">
+  <div class="p-4 w-100 h-auto shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label class="fw-bold">Emp Id </label>
+        <input
+          type="text"
+          placeholder="Enter your Id"
+          formControlName="empid"
+          [(ngModel)]="employee.empId"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            myForm.get('empid')?.hasError('required') &&
+            myForm.get('empid')?.touched
+          "
+          class="alert alert-warning"
+        >
+          Employee Id is required
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="form-group">
+        <label class="fw-bold">Enter Name </label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          formControlName="name"
+          [(ngModel)]="employee.name"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            myForm.get('name')?.hasError('required') &&
+            myForm.get('name')?.touched
+          "
+          class="alert alert-warning"
+        >
+          Name is required
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="form-group">
+        <label class="fw-bold">Project Name </label>
+        <input
+          type="text"
+          placeholder="Enter your project"
+          formControlName="project"
+          [(ngModel)]="employee.project"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            myForm.get('project')?.hasError('required') &&
+            myForm.get('project')?.touched
+          "
+          class="alert alert-warning"
+        >
+          Project is required
+        </div>
+      </div>
+
+      <br /><br />
+
+      <button type="submit" class="btn btn-primary">Save Employee data</button>
+    </form>
+
+    <div *ngIf="value" class="mt-3">
+      {{ value }}
+    </div>
+    <br><br>
+    <button class="btn btn-dark mb-3" (click)="getEmployee()">Fetch Employee data</button>
+
+    <ul>
+      <li *ngFor="let e of employeData">
+        {{e.empId}} - {{e.name}} - {{e.project}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- apply validation on forms and also make it responsive  -->
+<router-outlet></router-outlet>

@@ -1,0 +1,27 @@
+cors - cross origin resource sharing
+
+-------------------
+Task -
+
+create service - api
+creaet component = post component and inject api service as dependency injection
+and fetch all data form this url = "https://jsonplaceholder.typicode.com/posts"
+fetch data in responsive cards
+
+
+-----------------------------------
+CallStack() -
+-> it is used to track the function call in the execution of the program
+    totally depends on LIFO(last in first out).
+
+Event Queue -
+-> it is a data structure that holds events and as well as callbacks() waiting to be processed.
+
+Event - Loop -
+-> it is the processe that coninuously check the callstack and event queue.
+    The prupose of event lopp is to move the events from event Queue to callstack for execution.
+
+working principle - 
+-> Event Loop checks the callstack is empty or not ?
+if callstack is empty then it takes the event from the 
+    event - Queue and push it into the callstack for execution.
