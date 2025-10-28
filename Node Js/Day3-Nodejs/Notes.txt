@@ -1,0 +1,118 @@
+Mongo DB -
+
+-> It is developed by by MongoDB Inc in 2009.
+-> It is written in c,c++ and javascript.
+-> It is open source , NoSql DB. that provides us high perfromance and flexiblity.
+-> MongoDB is also called as NoSql DB , because it does not depends on RDBMS.
+-> we can store unstructured data in MongoDB that's why it is also called as Schema less data model.
+-> MongoDB comes under the category of document oriented database.
+-> eg : Table -> collection
+        rows -> document
+
+----------------------------
+Features of MongoDB -
+
+1) Document oriented -
+
+-> It stores the data in documents.
+
+
+2) Collection -
+
+-> It holds the collection of documents.
+
+3) we can store unstructured data in MongoDB.
+
+4) It is very secure because it has it's own controll and authentication feature.
+
+
+----------------------------------------------
+Difference between RDBMS and MongoDB -
+
+RDBMS                                                  MongoDB
+
+database                                                database
+Table                                                   collection
+records(row-col)                                        document
+columns                                                 field
+primary_key                                             _id
+
+------------------------------------------
+Starting MongoDB locally -
+
+go to the path of mongodb and bin then run the below command to start the local server of MongoDB
+C:\Program Files\MongoDB\Server\8.2\bin>mongod --dbpath "c://mongo-data"
+
+go to the path of extracted mongo shell path .. and bin at last 
+    then open the cmd at that path and hit enter. 
+mongodb shell(enable to interact with the mongodb) will be visible.
+
+
+
+--------------------------------------------
+Database realted commands in MongoDB(No Sql) -
+
+1) create DB -> use db_name
+2) create collection -> db.createCollection("collection_name")
+3) show dbs => for number of db in the mongodb
+4) show collections => for number of collection inside db.
+5)create a document -> db.coll_name.creaetOne or createMan
+
+
+cls- for clear
+use (db_name) - to swich b/w db's
+------------------------------------------------
+
+Try to implement updateMany 
+
+Task - 
+create DB -> products
+create collection -> data
+create fields -> _id , name , productsname, quantity ,stock, description
+                    uptp 5 fields.
+insertOne
+insertMany
+updateOne
+updateMany
+deleteOne
+deleteMany
+
+ 
+
+updateOne -
+update description at 2nd field
+
+
+
+
+-----------------------------------------
+Comparison Query operator -
+
+$eq - It matches the value which is equal to the specifying value.
+
+$ne - it matches value which is not equal to specifying value.
+
+$gt - it matches value greater than specifying value.
+
+$gte - it matches value greater than or  equal to specifying value.
+
+$lt - it matches value less than the specifying value.
+
+&lte - it matches value less than or equal to specifying value.
+
+$in → Match Any of the Given Values
+        { field: { $in: [value1, value2, ...] } }
+        db.users.find({ city: { $in: ["Delhi", "Patna", "Kolkata"] } })
+
+$nin → Not In (opposite of $in)
+
+        { field: { $nin: [value1, value2, ...] } }
+        db.users.find({ city: { $nin: ["Delhi", "Patna"] } })
+    Finds users who do not live in those cities.
+
+
+
+
+---------------------------------------------------------
+CRUD (Create , read, update, delete ) operations -
+
